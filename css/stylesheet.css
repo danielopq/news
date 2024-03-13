@@ -17,56 +17,61 @@ menu{
 	padding: 0px;
 	margin: 0px;
 }
+main{
+	height: 745px;
+	width: 1110px;
+	display:grid;
+	grid-template-rows: 40px 300px 180px 125px;
+	grid-template-columns: 350px 350px 350px;
+	grid-template-areas: 
+		"menu menu menu"
+		"mainPic mainPic news"
+		"title readMore news"
+		"reviving laptops gaming";
+	grid-gap: 30px;
+	border: solid 1px red;
+}
+
+main > div {
+	border: solid 1px black;
+}
 
 .flexColumnCenter{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 }
 
-main {
-	display: grid;
-	grid-template-rows: 40px 300px 180px 125px;
-	grid-template-columns: 350px 350px 350px;
-	grid-gap: 30px;
-	grid-template-areas: "menu menu menu"
-		"mainPic mainPic news"
-		"title readMore news"
-		"reviving laptops gaming"
-		;
-}
-#main > div {
-	border: black 1px solid;
-	text-align: center;
-}
-menu {
-	background: blue;
+menu{
 	grid-area: menu;
+	border: solid 1px black;
 }
-#mainPic {
-	background: red;
+
+#mainPic{
 	grid-area: mainPic;
 }
-#news {
-	background: green;
+
+#news{
 	grid-area: news;
 }
-#readMore {
-	background: yellow;
+
+#title{
+	grid-area: title;
+}
+
+#readMore{
 	grid-area: readMore;
 }
-	
-#reviving {
-	background: yellow;
+
+#reviving{
 	grid-area: reviving;
 }
-#laptops {
-	background: yellow;
+
+#laptops{
 	grid-area: laptops;
 }
-#gaming {
-	background: yellow;
+
+#gaming{
 	grid-area: gaming;
 }
 
