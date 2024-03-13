@@ -1,3 +1,73 @@
 @charset "utf-8";
-/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/*###################### GENERAL ######################*/
+
+*{
+	font-family: 'Inter';
+}
+
+body{
+	margin:0px;
+	padding: 0px;
+	width: 1440px;
+	height: 100vh;
+}
+menu{
+	padding: 0px;
+	margin: 0px;
+}
+
+.flexColumnCenter{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	display: grid;
+	grid-template-rows: 40px 300px 180px 125px;
+	grid-template-columns: 350px 350px 350px;
+	grid-gap: 30px;
+	grid-template-areas: "menu menu menu"
+		"mainPic mainPic news"
+		"title readMore news"
+		"reviving laptops gaming"
+		;
+}
+#main > div {
+	border: black 1px solid;
+	text-align: center;
+}
+menu {
+	background: blue;
+	grid-area: menu;
+}
+#mainPic {
+	background: red;
+	grid-area: mainPic;
+}
+#news {
+	background: green;
+	grid-area: news;
+}
+#readMore {
+	background: yellow;
+	grid-area: readMore;
+}
+	
+#reviving {
+	background: yellow;
+	grid-area: reviving;
+}
+#laptops {
+	background: yellow;
+	grid-area: laptops;
+}
+#gaming {
+	background: yellow;
+	grid-area: gaming;
+}
+
 
