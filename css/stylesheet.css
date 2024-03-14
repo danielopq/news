@@ -13,15 +13,27 @@ body{
 	width: 1440px;
 	height: 100vh;
 }
-menu{
-	padding: 0px;
-	margin: 0px;
+
+.flexColumnCenter{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
+.flexRowCenterSpaceBt{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-between;
+}
+
+/*###################### MAIN ######################*/
+
 main{
-	height: 745px;
+	height: 760px;
 	width: 1110px;
 	display:grid;
-	grid-template-rows: 40px 300px 180px 125px;
+	grid-template-rows: 65px 300px 180px 125px;
 	grid-template-columns: 350px 350px 350px;
 	grid-template-areas: 
 		"menu menu menu"
@@ -36,15 +48,22 @@ main > div {
 	border: solid 1px black;
 }
 
-.flexColumnCenter{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+
+/*###################### MENU ######################*/
 
 menu{
+	padding: 0px;
+	margin: 0px;
 	grid-area: menu;
-	border: solid 1px black;
+}
+
+#menu-links div{
+	height: 40px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	margin: auto 0px auto 40px;
+	color: hsl(233, 8%, 79%);
 }
 
 #mainPic{
