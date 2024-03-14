@@ -117,7 +117,11 @@ menu{
 	border-bottom: solid 1px hsl(233, 8%, 79%);
 }
 
+/*-------- TITLE --------*/
+
 #title{
+	font: 800 57px/1 'Inter';
+	color: black;
 	grid-area: title;
 }
 
