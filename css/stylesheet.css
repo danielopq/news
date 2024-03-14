@@ -27,7 +27,7 @@ body{
 	justify-content: space-between;
 }
 
-/*###################### MAIN ######################*/
+/*-------- MAIN --------*/
 
 main{
 	height: 760px;
@@ -48,8 +48,7 @@ main > div {
 	border: solid 1px black;
 }
 
-
-/*###################### MENU ######################*/
+/*-------- MENU --------*/
 
 menu{
 	padding: 0px;
@@ -60,19 +59,62 @@ menu{
 #menu-links div{
 	height: 40px;
 	text-align: center;
-	font-size: 16px;
-	font-weight: 400;
+	font: 400 16px/40px 'Inter';
 	margin: auto 0px auto 40px;
 	color: hsl(233, 8%, 79%);
 }
+
+/*-------- MAINPIC --------*/
 
 #mainPic{
 	background: url("../images/image-web-3-desktop.jpg") center/730px no-repeat;
 	grid-area: mainPic;
 }
 
+/*-------- NEWS --------*/
+
 #news{
+	background-color: hsl(240, 100%, 5%);
 	grid-area: news;
+}
+
+#news div{
+	width: 310px;
+	text-align: left;
+}
+
+#news-top{
+	height: 80px;
+	color:hsl(35, 77%, 62%);
+	font: 800 40px/45px 'Inter';
+}
+
+#news-top p{
+	margin-top: 30px;
+}
+
+.news-paragraph{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	height: 145px;
+	color:white;
+}
+
+.news-title{
+	font: 700 20px/0.7 'Inter';
+	margin: 20px 0px 0px 0px;
+}
+
+.news-text{
+	font: 200 16px/1.6 'Inter';
+	
+}
+
+#news-downsidesOfAI{
+	border-top: solid 1px hsl(233, 8%, 79%);
+	border-bottom: solid 1px hsl(233, 8%, 79%);
 }
 
 #title{
