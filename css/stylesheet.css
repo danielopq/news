@@ -67,6 +67,7 @@ menu{
 }
 
 #mainPic{
+	background: url("../images/image-web-3-desktop.jpg") center/730px no-repeat;
 	grid-area: mainPic;
 }
 
