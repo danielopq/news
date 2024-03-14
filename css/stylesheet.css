@@ -10,8 +10,9 @@
 body{
 	margin:0px;
 	padding: 0px;
-	width: 1440px;
+	width: 100vw;
 	height: 100vh;
+	justify-content: center;
 }
 
 .flexColumnCenter{
@@ -41,11 +42,6 @@ main{
 		"title readMore news"
 		"reviving laptops gaming";
 	grid-gap: 30px;
-	border: solid 1px red;
-}
-
-main > div {
-	border: solid 1px black;
 }
 
 /*-------- MENU --------*/
@@ -99,17 +95,17 @@ menu{
 	align-items: flex-start;
 	justify-content: center;
 	height: 145px;
-	color:white;
 }
 
 .news-title{
 	font: 700 20px/0.7 'Inter';
 	margin: 20px 0px 0px 0px;
+	color:white;
 }
 
 .news-text{
-	font: 200 16px/1.6 'Inter';
-	
+	font: 300 15px/1.6 'Inter';
+	color:hsl(233, 8%, 79%);
 }
 
 #news-downsidesOfAI{
@@ -125,20 +121,82 @@ menu{
 	grid-area: title;
 }
 
+/*-------- READMORE --------*/
+
 #readMore{
 	grid-area: readMore;
+}
+
+#readMore-text{
+	width: inherit;
+	height: 130px;
+	font: 400 15px/1.6 'Inter';
+	color: hsl(236, 13%, 42%);
+}
+
+#readMore-bt{
+	width: 185px;
+	height: 50px;
+	background-color: hsl(5, 85%, 63%);
+	color:white;
+	text-align: center;
+	font: 600 14px/50px 'Inter';
+	letter-spacing: 5px;
+}
+
+/*-------- BOTTOM NEWS --------*/
+
+.bottom-news{
+	display: grid;
+	grid-template-rows: 30px 25px 50px;
+	grid-template-columns: 100px 225px;
+	grid-row-gap: 10px;
+	grid-column-gap: 25px;
+	grid-template-areas: 
+		"pic number"
+		"pic title"
+		"pic text";
+}
+
+.bottom-news-pic{
+	grid-area: pic;
+}
+.bottom-news-num{
+	font: 600 30px/30px 'Inter';
+	color: hsl(233, 8%, 79%);
+	text-align: left;
+	grid-area: number;
+}
+.bottom-news-title{
+	font: 600 18px/25px 'Inter';
+	color: hsl(240, 100%, 5%);
+	text-align: left;
+	grid-area: title;
+}
+.bottom-news-text{
+	font: 400 15px/1.6 'Inter';
+	color: hsl(236, 13%, 42%);
+	text-align: left;
+	grid-area: text;
 }
 
 #reviving{
 	grid-area: reviving;
 }
-
+#reviving-pic{
+	background: url("../images/image-retro-pcs.jpg") center/100px no-repeat;
+}
 #laptops{
 	grid-area: laptops;
 }
-
+#laptops-pic{
+	background: url("../images/image-top-laptops.jpg") center/100px no-repeat;
+}
 #gaming{
 	grid-area: gaming;
+}
+#gaming-pic{
+	background: url("../images/image-gaming-growth.jpg")center/100px no-repeat;
 }
 
 
