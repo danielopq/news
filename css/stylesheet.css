@@ -57,7 +57,16 @@ menu{
 	text-align: center;
 	font: 400 16px/40px 'Inter';
 	margin: auto 0px auto 40px;
+}
+
+#menu-links p{
+	margin: auto;
 	color: hsl(233, 8%, 79%);
+}
+
+#menu-links p:hover{
+	cursor: pointer;
+	color:hsl(35, 77%, 62%);
 }
 
 /*-------- MAINPIC --------*/
@@ -103,6 +112,11 @@ menu{
 	color:white;
 }
 
+.news-title:hover{
+	cursor:pointer;
+	color: hsl(35, 77%, 62%);
+}
+
 .news-text{
 	font: 300 15px/1.6 'Inter';
 	color:hsl(233, 8%, 79%);
@@ -144,6 +158,10 @@ menu{
 	letter-spacing: 5px;
 }
 
+#readMore-bt:hover{
+	cursor: pointer;
+	background-color: hsl(240, 100%, 5%);
+}
 /*-------- BOTTOM NEWS --------*/
 
 .bottom-news{
@@ -169,9 +187,16 @@ menu{
 }
 .bottom-news-title{
 	font: 600 18px/25px 'Inter';
-	color: hsl(240, 100%, 5%);
 	text-align: left;
 	grid-area: title;
+}
+.bottom-news-title p{
+	margin: auto;
+	color: hsl(240, 100%, 5%);
+}
+.bottom-news-title p:hover{
+	cursor:pointer;
+	color:hsl(5, 85%, 63%);
 }
 .bottom-news-text{
 	font: 400 15px/1.6 'Inter';
