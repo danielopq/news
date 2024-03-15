@@ -10,6 +10,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	justify-content: center;
+	background-color: hsl(36, 100%, 99%);
 }
 .flexColumnCenter {
 	display: flex;
@@ -50,7 +51,7 @@ menu {
 }
 #menu-links p {
 	margin: auto;
-	color: hsl(233, 8%, 79%);
+	color: hsl(236, 13%, 42%);
 }
 #menu-links p:hover {
 	cursor: pointer;
