@@ -10,64 +10,96 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body class="flexColumnCenter">
-	<main>
-		<menu class="flexRowCenterSpaceBt">
-			<div id="menu-logo"><img src="images/logo.svg" alt=""/></div>
-			<div id="menu-links" class="flexRowCenterSpaceBt">
-				<div id="link-desk-home" class="link-desk"><p>Home</p></div>
-				<div id="link-desk-new" class="link-desk"><p>New</p></div>
-				<div id="link-desk-popular" class="link-desk"><p>Popular</p></div>
-				<div id="link-desk-trending" class="link-desk"><p>Trending</p></div>
-				<div id="link-desk-categories" class="link-desk"><p>Categories</p></div>
+<main>
+	<menu class="flexRowCenterSpaceBt">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<div id="menu-logo"><img src="images/logo.svg" alt=""/></div>
+		<div id="menu-links" class="flexRowCenterSpaceBt">
+			<div id="link-desk-home">
+				<p>Home</p>
 			</div>
-		</menu>
-		<div id="mainPic"></div>
-		<div id="news" class="flexColumnCenter">
-			<div id="news-top"><p>New</p></div>
-			<div id="news-hydrogenElec" class="news-paragraph">
-				<p class="news-title">Hydrogen VS Electric Cars</p>
-				<p class="news-text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+			<div id="link-desk-new">
+				<p>New</p>
 			</div>
-			<div id="news-downsidesOfAI" class="news-paragraph">
-				<p class="news-title">The Downsides of AI Artistry</p>
-				<p class="news-text">What are the possible adverse effects of on-demand AI image generation?</p>
+			<div id="link-desk-popular">
+				<p>Popular</p>
 			</div>
-			<div id="news-vc" class="news-paragraph">
-				<p class="news-title">Is VC Funding Drying Up?</p>
-				<p class="news-text">Private funding by VC firms is down 50% YOY. We take a look what that means.</p>
+			<div id="link-desk-trending">
+				<p>Trending</p>
+			</div>
+			<div id="link-desk-categories">
+				<p>Categories</p>
 			</div>
 		</div>
-		<div id="title">The Bright Future of Web 3.0?</div>
-		<div id="readMore">
-			<div id="readMore-text">
-				We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of  the people. But is it really fulfiling its promise?
-			</div>
-			<div id="readMore-bt">READ MORE</div>
-		</div>
-		<div id="reviving" class="bottom-news">
-			<div id="reviving-pic" class="bottom-news-pic"></div>
-			<div id="reviving-num" class="bottom-news-num">01</div>
-			<div id="reviving-title" class="bottom-news-title"><p>Reviving Retro PCs</p></div>
-			<div id="reviving-text" class="bottom-news-text">
-				what happens when old PCs are given modern upgrades?
-			</div>
-		</div>
-		<div id="laptops" class="bottom-news">
-			<div id="laptops-pic" class="bottom-news-pic"></div>
-			<div id="laptops-num" class="bottom-news-num">02</div>
-			<div id="laptops-title" class="bottom-news-title"><p>Top 10 Laptops of 2022</p></div>
-			<div id="laptops-text" class="bottom-news-text">
-				Our best picks for various needs and budgets.
+		<div id="menu-hamburger"></div>
+		<div id="menu-mobile">
+			<div id="menu-mobile-back">
+				<div id="mobile-close"><img id="closeIcon-img" src="images/icon-menu-close.svg" alt=""/></div>
+				<div id="link-mb-home" class="link-mb">
+					<p>Home</p>
+				</div>
+				<div id="link-mb-new" class="link-mb">
+					<p>New</p>
+				</div>
+				<div id="link-mb-popular" class="link-mb">
+					<p>Popular</p>
+				</div>
+				<div id="link-mb-trending" class="link-mb">
+					<p>Trending</p>
+				</div>
+				<div id="link-mb-categories" class="link-mb">
+					<p>Categories</p>
+				</div>
 			</div>
 		</div>
-		<div id="gaming" class="bottom-news">
-			<div id="gaming-pic" class="bottom-news-pic"></div>
-			<div id="gaming-num" class="bottom-news-num">03</div>
-			<div id="gaming-title" class="bottom-news-title"><p>The Growth of Gaming</p></div>
-			<div id="gaming-text" class="bottom-news-text">
-				How the pandemic has sparked fresh opportunities.
-			</div>
+	</menu>
+	<div id="mainPic"></div>
+	<div id="news" class="flexColumnCenter">
+		<div id="news-top">
+			<p>New</p>
 		</div>
-	</main>
+		<div id="news-hydrogenElec" class="news-paragraph">
+			<p class="news-title">Hydrogen VS Electric Cars</p>
+			<p class="news-text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+		</div>
+		<div id="news-downsidesOfAI" class="news-paragraph">
+			<p class="news-title">The Downsides of AI Artistry</p>
+			<p class="news-text">What are the possible adverse effects of on-demand AI image generation?</p>
+		</div>
+		<div id="news-vc" class="news-paragraph">
+			<p class="news-title">Is VC Funding Drying Up?</p>
+			<p class="news-text">Private funding by VC firms is down 50% YOY. We take a look what that means.</p>
+		</div>
+	</div>
+	<div id="title">The Bright Future of Web 3.0?</div>
+	<div id="readMore">
+		<div id="readMore-text"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of  the people. But is it really fulfiling its promise? </div>
+		<div id="readMore-bt">READ MORE</div>
+	</div>
+	<div id="reviving" class="bottom-news">
+		<div id="reviving-pic" class="bottom-news-pic"></div>
+		<div id="reviving-num" class="bottom-news-num">01</div>
+		<div id="reviving-title" class="bottom-news-title">
+			<p>Reviving Retro PCs</p>
+		</div>
+		<div id="reviving-text" class="bottom-news-text"> what happens when old PCs are given modern upgrades? </div>
+	</div>
+	<div id="laptops" class="bottom-news">
+		<div id="laptops-pic" class="bottom-news-pic"></div>
+		<div id="laptops-num" class="bottom-news-num">02</div>
+		<div id="laptops-title" class="bottom-news-title">
+			<p>Top 10 Laptops of 2022</p>
+		</div>
+		<div id="laptops-text" class="bottom-news-text"> Our best picks for various needs and budgets. </div>
+	</div>
+	<div id="gaming" class="bottom-news">
+		<div id="gaming-pic" class="bottom-news-pic"></div>
+		<div id="gaming-num" class="bottom-news-num">03</div>
+		<div id="gaming-title" class="bottom-news-title">
+			<p>The Growth of Gaming</p>
+		</div>
+		<div id="gaming-text" class="bottom-news-text"> How the pandemic has sparked fresh opportunities. </div>
+	</div>
+</main>
 </body>
 </html>

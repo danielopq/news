@@ -1,227 +1,277 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
 /*###################### GENERAL ######################*/
-
-*{
+* {
 	font-family: 'Inter';
 }
-
-body{
-	margin:0px;
+body {
+	margin: 0px;
 	padding: 0px;
 	width: 100vw;
 	height: 100vh;
 	justify-content: center;
 }
-
-.flexColumnCenter{
+.flexColumnCenter {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-
-.flexRowCenterSpaceBt{
+.flexRowCenterSpaceBt {
 	display: flex;
 	flex-direction: row;
 	align-content: center;
 	justify-content: space-between;
 }
-
 /*-------- MAIN --------*/
-
-main{
+main {
 	height: 760px;
 	width: 1110px;
-	display:grid;
+	display: grid;
 	grid-template-rows: 65px 300px 180px 125px;
 	grid-template-columns: 350px 350px 350px;
-	grid-template-areas: 
+	grid-template-areas:
 		"menu menu menu"
 		"mainPic mainPic news"
 		"title readMore news"
 		"reviving laptops gaming";
 	grid-gap: 30px;
 }
-
 /*-------- MENU --------*/
-
-menu{
+menu {
 	padding: 0px;
 	margin: 0px;
 	grid-area: menu;
 }
-
-#menu-links div{
+#menu-links div {
 	height: 40px;
 	text-align: center;
 	font: 400 16px/40px 'Inter';
 	margin: auto 0px auto 40px;
 }
-
-#menu-links p{
+#menu-links p {
 	margin: auto;
 	color: hsl(233, 8%, 79%);
 }
-
-#menu-links p:hover{
+#menu-links p:hover {
 	cursor: pointer;
-	color:hsl(35, 77%, 62%);
+	color: hsl(35, 77%, 62%);
 }
-
+#menu-hamburger {
+	display: none;
+	width: 40px;
+	height: 40px;
+	background: url("../images/icon-menu.svg") center no-repeat;
+}
+#menu-hamburger:hover {
+	cursor: pointer;
+}
+#menu-mobile {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	right: 0px;
+	top: 0px;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	background-color: hsla(0, 0%, 0%, 0.6)
+}
+#menu-mobile-back {
+	float: right;
+	overflow: hidden;
+	width: 300px;
+	height: inherit;
+	background-color: white;
+}
+#menu-mobile-back > div {
+	width: inherit;
+	height: 40px;
+}
+#menu-mobile p {
+	color: hsl(240, 100%, 5%);
+	font: 400 18px/40px 'Inter';
+	margin-left: 25px;
+}
+#menu-mobile p:hover {
+	cursor: pointer;
+	color: hsla(240, 100%, 5%, 0.6);
+}
+#mobile-close {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+#closeIcon-img {
+	display: block;
+	float: right;
+	margin-right: 30px;
+}
+#closeIcon-img:hover {
+	cursor: pointer;
+}
 /*-------- MAINPIC --------*/
-
-#mainPic{
+#mainPic {
 	background: url("../images/image-web-3-desktop.jpg") center/730px no-repeat;
 	grid-area: mainPic;
 }
-
 /*-------- NEWS --------*/
-
-#news{
+#news {
 	background-color: hsl(240, 100%, 5%);
 	grid-area: news;
 }
-
-#news div{
+#news div {
 	width: 310px;
 	text-align: left;
 }
-
-#news-top{
+#news-top {
 	height: 80px;
-	color:hsl(35, 77%, 62%);
+	color: hsl(35, 77%, 62%);
 	font: 800 40px/45px 'Inter';
 }
-
-#news-top p{
+#news-top p {
 	margin-top: 30px;
 }
-
-.news-paragraph{
+.news-paragraph {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
 	height: 145px;
 }
-
-.news-title{
+.news-title {
 	font: 700 20px/0.7 'Inter';
 	margin: 20px 0px 0px 0px;
-	color:white;
+	color: white;
 }
-
-.news-title:hover{
-	cursor:pointer;
+.news-title:hover {
+	cursor: pointer;
 	color: hsl(35, 77%, 62%);
 }
-
-.news-text{
+.news-text {
 	font: 300 15px/1.6 'Inter';
-	color:hsl(233, 8%, 79%);
+	color: hsl(233, 8%, 79%);
 }
-
-#news-downsidesOfAI{
+#news-downsidesOfAI {
 	border-top: solid 1px hsl(233, 8%, 79%);
 	border-bottom: solid 1px hsl(233, 8%, 79%);
 }
-
 /*-------- TITLE --------*/
-
-#title{
+#title {
 	font: 800 57px/1 'Inter';
 	color: black;
 	grid-area: title;
 }
-
 /*-------- READMORE --------*/
-
-#readMore{
+#readMore {
 	grid-area: readMore;
 }
-
-#readMore-text{
+#readMore-text {
 	width: inherit;
 	height: 130px;
 	font: 400 15px/1.6 'Inter';
 	color: hsl(236, 13%, 42%);
 }
-
-#readMore-bt{
+#readMore-bt {
 	width: 185px;
 	height: 50px;
 	background-color: hsl(5, 85%, 63%);
-	color:white;
+	color: white;
 	text-align: center;
 	font: 600 14px/50px 'Inter';
 	letter-spacing: 5px;
 }
-
-#readMore-bt:hover{
+#readMore-bt:hover {
 	cursor: pointer;
 	background-color: hsl(240, 100%, 5%);
 }
 /*-------- BOTTOM NEWS --------*/
-
-.bottom-news{
+.bottom-news {
 	display: grid;
 	grid-template-rows: 30px 25px 50px;
 	grid-template-columns: 100px 225px;
 	grid-row-gap: 10px;
 	grid-column-gap: 25px;
-	grid-template-areas: 
+	grid-template-areas:
 		"pic number"
 		"pic title"
 		"pic text";
 }
-
-.bottom-news-pic{
+.bottom-news-pic {
 	grid-area: pic;
 }
-.bottom-news-num{
+.bottom-news-num {
 	font: 600 30px/30px 'Inter';
 	color: hsl(233, 8%, 79%);
 	text-align: left;
 	grid-area: number;
 }
-.bottom-news-title{
+.bottom-news-title {
 	font: 600 18px/25px 'Inter';
 	text-align: left;
 	grid-area: title;
 }
-.bottom-news-title p{
+.bottom-news-title p {
 	margin: auto;
 	color: hsl(240, 100%, 5%);
 }
-.bottom-news-title p:hover{
-	cursor:pointer;
-	color:hsl(5, 85%, 63%);
+.bottom-news-title p:hover {
+	cursor: pointer;
+	color: hsl(5, 85%, 63%);
 }
-.bottom-news-text{
+.bottom-news-text {
 	font: 400 15px/1.6 'Inter';
 	color: hsl(236, 13%, 42%);
 	text-align: left;
 	grid-area: text;
 }
-
-#reviving{
+#reviving {
 	grid-area: reviving;
 }
-#reviving-pic{
+#reviving-pic {
 	background: url("../images/image-retro-pcs.jpg") center/100px no-repeat;
 }
-#laptops{
+#laptops {
 	grid-area: laptops;
 }
-#laptops-pic{
+#laptops-pic {
 	background: url("../images/image-top-laptops.jpg") center/100px no-repeat;
 }
-#gaming{
+#gaming {
 	grid-area: gaming;
 }
-#gaming-pic{
+#gaming-pic {
 	background: url("../images/image-gaming-growth.jpg")center/100px no-repeat;
 }
-
-
+/*##################################### MOBILE VERSION #####################################*/
+@media screen and (max-width: 480px) {
+	body {
+		height: 100%;
+	}
+	main {
+		margin-top: 30px;
+		height: 1805px;
+		width: 450px;
+		grid-template-rows: 40px 300px 180px 160px 510px 125px 125px 125px;
+		grid-template-columns: 450px;
+		grid-template-areas:
+			"menu"
+			"mainPic"
+			"title"
+			"readMore"
+			"news"
+			"reviving"
+			"laptops"
+			"gaming";
+	}
+	#menu-links {
+		display: none;
+	}
+	#menu-hamburger {
+		display: block;
+	}
+	#mainPic {
+		background: url("../images/image-web-3-mobile.jpg") no-repeat;
+	}
+	#readMore-text {
+		height: 110px;
+	}
+}
