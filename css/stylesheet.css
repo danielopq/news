@@ -68,11 +68,6 @@ menu {
 	color: hsl(236, 13%, 42%);
 }
 
-#menu-links p:hover {
-	cursor: pointer;
-	color: hsl(35, 77%, 62%);
-}
-
 #menu-hamburger {
 	display: none;
 	width: 40px;
@@ -80,8 +75,15 @@ menu {
 	background: url("../images/icon-menu.svg") center no-repeat;
 }
 
-#menu-hamburger:hover {
-	cursor: pointer;
+@media(hover:hover) {
+	#menu-links p:hover {
+		cursor: pointer;
+		color: hsl(35, 77%, 62%);
+	}
+
+	#menu-hamburger:hover {
+		cursor: pointer;
+	}
 }
 
 #menu-mobile {
@@ -115,9 +117,11 @@ menu {
 	margin-left: 25px;
 }
 
-#menu-mobile p:hover {
-	cursor: pointer;
-	color: hsla(240, 100%, 5%, 0.6);
+@media(hover:hover) {
+	#menu-mobile p:hover {
+		cursor: pointer;
+		color: hsla(240, 100%, 5%, 0.6);
+	}
 }
 
 #mobile-close {
@@ -176,9 +180,11 @@ menu {
 	color: white;
 }
 
-.news-title:hover {
-	cursor: pointer;
-	color: hsl(35, 77%, 62%);
+@media(hover:hover) {
+	.news-title:hover {
+		cursor: pointer;
+		color: hsl(35, 77%, 62%);
+	}
 }
 
 .news-text {
@@ -219,9 +225,11 @@ menu {
 	letter-spacing: 5px;
 }
 
-#readMore-bt:hover {
-	cursor: pointer;
-	background-color: hsl(240, 100%, 5%);
+@media(hover:hover) {
+	#readMore-bt:hover {
+		cursor: pointer;
+		background-color: hsl(240, 100%, 5%);
+	}
 }
 
 /*-------- BOTTOM NEWS --------*/
@@ -259,9 +267,11 @@ menu {
 	color: hsl(240, 100%, 5%);
 }
 
-.bottom-news-title p:hover {
-	cursor: pointer;
-	color: hsl(5, 85%, 63%);
+@media(hover:hover) {
+	.bottom-news-title p:hover {
+		cursor: pointer;
+		color: hsl(5, 85%, 63%);
+	}
 }
 
 .bottom-news-text {
