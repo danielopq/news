@@ -12,7 +12,7 @@ const openMobileMenu = () => {
 }
 
 /**
- * Hide the main menu (mobile version).
+ * Hides the main menu (mobile version).
  */
 const closeMobileMenu = () => {
 	document.getElementById("menu-mobile").style.display = "none";
