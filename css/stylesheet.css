@@ -11,7 +11,10 @@ body {
 	padding: 0px;
 	width: 100vw;
 	height: 100vh;
-	justify-content: center;
+	padding-top: 89px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 	background-color: hsl(36, 100%, 99%);
 }
 
@@ -36,10 +39,10 @@ h1 {
 
 /*-------- MAIN --------*/
 main {
-	height: 760px;
+	height: 806px;
 	width: 1110px;
 	display: grid;
-	grid-template-rows: 65px 300px 180px 125px;
+	grid-template-rows: 40px 300px 180px 125px;
 	grid-template-columns: 350px 350px 350px;
 	grid-template-areas:
 		"menu menu menu"
@@ -51,16 +54,26 @@ main {
 
 /*-------- MENU --------*/
 nav{
+	height: 40px;
 	padding: 0px;
 	margin: 0px;
 	grid-area: menu;
 }
 
+#menu-logo{
+	width: 64px;
+	height: inherit;
+	background: url('../images/logo.svg') top/64px no-repeat;
+}
+
+#menu-links{
+	width: 431px;
+}
+
 #menu-links div {
 	height: 40px;
 	text-align: center;
-	font: 400 16px/40px 'Inter';
-	margin: auto 0px auto 40px;
+	font: 400 15px/40px 'Inter';
 }
 
 #menu-links p {
