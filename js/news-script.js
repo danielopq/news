@@ -1,9 +1,4 @@
 
-(() => {
-	document.getElementById("menu-hamburger").addEventListener('click', openMobileMenu, false);
-	document.getElementById("closeIcon-img").addEventListener('click', closeMobileMenu, false);
-})()
-
 /**
  * Displays the main menu (mobile version).
  */
@@ -17,3 +12,8 @@ const openMobileMenu = () => {
 const closeMobileMenu = () => {
 	document.getElementById("menu-mobile").style.display = "none";
 }
+
+(() => {
+	document.getElementById("menu-hamburger").addEventListener('click', openMobileMenu, false);
+	document.getElementById("closeIcon-img").addEventListener('click', closeMobileMenu, false);
+})()

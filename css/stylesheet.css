@@ -66,13 +66,7 @@ nav{
 #menu-links p {
 	margin: auto;
 	color: hsl(236, 13%, 42%);
-}
-
-#menu-hamburger {
-	display: none;
-	width: 40px;
-	height: 40px;
-	background: url("../images/icon-menu.svg") center no-repeat;
+	transition: color 0.3s ease;
 }
 
 @media(hover:hover) {
@@ -80,10 +74,14 @@ nav{
 		cursor: pointer;
 		color: hsl(35, 77%, 62%);
 	}
+}
 
-	#menu-hamburger:hover {
-		cursor: pointer;
-	}
+#menu-hamburger {
+	display: none;
+	width: 40px;
+	height: 40px;
+	background: url("../images/icon-menu.svg") center no-repeat;
+	cursor: pointer;
 }
 
 #menu-mobile {
@@ -115,11 +113,12 @@ nav{
 	color: hsl(240, 100%, 5%);
 	font: 400 18px/40px 'Inter';
 	margin-left: 25px;
+	cursor: pointer;
+	transition: color 0.3s ease;
 }
 
 @media(hover:hover) {
 	#menu-mobile p:hover {
-		cursor: pointer;
 		color: hsla(240, 100%, 5%, 0.6);
 	}
 }
@@ -133,9 +132,6 @@ nav{
 	display: block;
 	float: right;
 	margin-right: 30px;
-}
-
-#closeIcon-img:hover {
 	cursor: pointer;
 }
 
@@ -178,11 +174,12 @@ nav{
 	font: 700 20px/0.7 'Inter';
 	margin: 20px 0px 0px 0px;
 	color: white;
+	cursor: pointer;
+	transition: color 0.3s ease;
 }
 
 @media(hover:hover) {
 	.news-title:hover {
-		cursor: pointer;
 		color: hsl(35, 77%, 62%);
 	}
 }
@@ -223,11 +220,12 @@ nav{
 	text-align: center;
 	font: 600 14px/50px 'Inter';
 	letter-spacing: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 
 @media(hover:hover) {
 	#readMore-bt:hover {
-		cursor: pointer;
 		background-color: hsl(240, 100%, 5%);
 	}
 }
@@ -264,12 +262,13 @@ nav{
 
 .bottom-news-title p {
 	margin: auto;
+	cursor: pointer;
 	color: hsl(240, 100%, 5%);
+	transition: color 0.3s ease;
 }
 
 @media(hover:hover) {
 	.bottom-news-title p:hover {
-		cursor: pointer;
 		color: hsl(5, 85%, 63%);
 	}
 }
