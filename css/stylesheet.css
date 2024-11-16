@@ -3,6 +3,8 @@
 
 :root {
 	--AlmostWhite: #FFFDFA; /*hsl(36,100%,99%)*/
+	--Yellow: #E9AA52; /*hsl(35,77.4%,61.8%)*/
+	--Silver: #C5C6CE; /*hsl(233.3,8.4%,79%)*/
 	--Gunmetal: #5E607A; /*hsl(235.7,13%,42.4%)*/
 	--DarkSpaceBlue: #00001A; /*hsl(240,100%,5.1%)*/
 }
@@ -36,13 +38,17 @@ body {
 	justify-content: space-between;
 }
 
-h1 {
-	font: 800 57px/1 'Inter';
+p,h1{
 	margin: 0px;
 	padding: 0px;
 }
 
-/*-------- MENU --------*/
+h1 {
+	font: 800 57px/1 'Inter';
+}
+
+
+/*-------- DESKTOP MENU --------*/
 
 nav {
 	width: 1110px;
@@ -69,6 +75,7 @@ nav {
 
 .desktopMenuBt {
 	font: 400 15px/40px 'Inter';
+	padding: 0px;
 	color: var(--Gunmetal);
 	background-color: transparent;
 	border: none;
@@ -78,9 +85,11 @@ nav {
 
 @media(hover:hover) {
 	#desktopMenu button:hover {
-		color: hsl(35, 77%, 62%);
+		color: var(--Yellow);
 	}
 }
+
+/*-------- MOBILE MENU --------*/
 
 #mobileMenu {
 	width: 100%;
@@ -91,7 +100,7 @@ nav {
 	right: 0px;
 	top: 0px;
 	overflow: hidden;
-	background-color: hsla(240, 100%, 5.1%, 0.5)
+	background-color: var(--DarkSpaceBlue)
 }
 
 #hamburger {
@@ -133,6 +142,7 @@ nav {
 }
 
 /*-------- MAIN --------*/
+
 main {
 	width: 1110px;
 	height: 806px;
@@ -140,8 +150,8 @@ main {
 	grid-template-rows: 300px 180px 125px;
 	grid-template-columns: 350px 350px 350px;
 	grid-template-areas:
-		"mainPic mainPic news"
-		"title readMore news"
+		"mainPic mainPic new"
+		"title readMore new"
 		"reviving laptops gaming";
 	grid-gap: 30px;
 	margin-top: 55px;
@@ -153,57 +163,57 @@ main {
 	grid-area: mainPic;
 }
 
-/*-------- NEWS --------*/
-#news {
-	background-color: hsl(240, 100%, 5%);
-	grid-area: news;
-}
-
-#news div {
-	width: 310px;
-	text-align: left;
+/*-------- NEW --------*/
+#new {
+	padding: 30px 24px 0px 24px;
+	background-color: var(--DarkSpaceBlue);
+	grid-area: new;
 }
 
 #news-top {
-	height: 80px;
-	color: hsl(35, 77%, 62%);
-	font: 800 40px/45px 'Inter';
+	color: var(--Yellow);
+	font: 800 40px/40px 'Inter';
+	margin-bottom: 34px;
 }
 
-#news-top p {
-	margin-top: 30px;
-}
-
-.news-paragraph {
+.new-paragraph {
+	width: 302px;
+	text-align: left;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-	height: 145px;
+	height: 84px;
 }
 
-.news-title {
-	font: 700 20px/0.7 'Inter';
-	margin: 20px 0px 0px 0px;
-	color: white;
+.new-headerBt {
+	height: 24px;
+	padding: 0px;
+	margin-bottom: 8px;
+	background-color: transparent;
+	border: none;
+	font: 700 20px/24px 'Inter';
+	color: var(--AlmostWhite);
 	cursor: pointer;
 	transition: color 0.3s ease;
 }
 
 @media(hover:hover) {
-	.news-title:hover {
-		color: hsl(35, 77%, 62%);
+	.new-headerBt:hover {
+		color: var(--Yellow);
 	}
 }
 
-.news-text {
-	font: 300 15px/1.6 'Inter';
-	color: hsl(233, 8%, 79%);
+.new-separator{
+	width: 302px;
+	height: 1px;
+	margin: 29px 0px 31px;
+	background-color: var(--Gunmetal) ;
 }
 
-#news-downsidesOfAI {
-	border-top: solid 1px hsl(233, 8%, 79%);
-	border-bottom: solid 1px hsl(233, 8%, 79%);
+.new-text {
+	font: 300 15px/26px 'Inter';
+	color: var(--Silver);
 }
 
 /*-------- TITLE --------*/
