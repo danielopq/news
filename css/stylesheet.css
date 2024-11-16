@@ -44,9 +44,8 @@ p,h1{
 }
 
 h1 {
-	font: 800 57px/1 'Inter';
+	font: 800 56px/56px 'Inter';
 }
-
 
 /*-------- DESKTOP MENU --------*/
 
@@ -147,13 +146,14 @@ main {
 	width: 1110px;
 	height: 806px;
 	display: grid;
-	grid-template-rows: 300px 180px 125px;
+	grid-template-rows: 300px 183px 125px;
 	grid-template-columns: 350px 350px 350px;
 	grid-template-areas:
 		"mainPic mainPic new"
 		"title readMore new"
 		"reviving laptops gaming";
-	grid-gap: 30px;
+	column-gap: 30px;
+	row-gap: 28px;
 	margin-top: 55px;
 }
 
@@ -170,7 +170,7 @@ main {
 	grid-area: new;
 }
 
-#news-top {
+#new-top {
 	color: var(--Yellow);
 	font: 800 40px/40px 'Inter';
 	margin-bottom: 34px;
@@ -218,7 +218,7 @@ main {
 
 /*-------- TITLE --------*/
 #title {
-	color: black;
+	color: var(--DarkSpaceBlue);
 	grid-area: title;
 }
 
