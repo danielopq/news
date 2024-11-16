@@ -60,7 +60,7 @@ p,h1{
 }
 
 h1 {
-	font: 800 56px/56px 'Inter-ExtraBold';
+	font: 800 57px/56px 'Inter-ExtraBold';
 }
 
 /*-------- DESKTOP MENU --------*/
@@ -75,7 +75,7 @@ nav {
 #logo {
 	width: 65px;
 	height: inherit;
-	background: url('../images/logo.svg') center/64px no-repeat;
+	background: url('../images/logo.svg') center/65px no-repeat;
 }
 
 #desktopMenu {
@@ -314,7 +314,7 @@ footer{
 
 .footer-articleHeaderBt{
 	padding: 0px;
-	margin: 12px 0px 9px;
+	margin: 12px 0px 12px;
 	font: 800 18.7px/24px 'Inter-ExtraBold';
 	text-align: left;
 	color: var(--DarkSpaceBlue);
