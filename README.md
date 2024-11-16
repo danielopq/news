@@ -10,7 +10,7 @@
 
 ## Overview
 
-This project involved developing a responsive frontend for an IT news website, optimized for seamless use on both desktop and mobile devices. The layout and design elements were carefully structured based on the provided mockups, ensuring consistency and ease of navigation across devices. Key components were implemented using CSS Grid to streamline transitions between desktop and mobile views, enabling an adaptable layout that efficiently scales down to smaller screens without losing functionality or aesthetic quality.
+This project involved developing a responsive frontend for an IT news website landing page, optimized for seamless use on both desktop and mobile devices. The layout and design elements were carefully structured based on the provided mockups, ensuring consistency and ease of navigation across devices. Key components were implemented using CSS Grid to streamline transitions between desktop and mobile views, enabling an adaptable layout that efficiently scales down to smaller screens without losing functionality or aesthetic quality.
 
 The entire website was built from scratch using only HTML and CSS, with no reliance on frameworks or external libraries. This approach allowed for greater customization, reduced load times, and fine-tuned control over the responsive behavior of each element. The result is a clean, lightweight, and user-friendly website that provides a smooth experience for IT news readers on any device.
 
@@ -22,7 +22,7 @@ The entire website was built from scratch using only HTML and CSS, with no relia
 
 ### Links
 
-- Live Site URL: [https://danielmartinez.co.uk/news]
+- Live Site URL: [https://danielopq.github.io/news]
 
 ## My process
 
