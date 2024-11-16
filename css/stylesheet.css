@@ -182,14 +182,14 @@ main {
 /*-------- NEW --------*/
 
 #new {
-	padding: 30px 25px 0px 24px;
+	padding: 31px 25px 0px 24px;
 	background-color: var(--DarkSpaceBlue);
 	grid-area: new;
 }
 
 #new-top {
 	color: var(--Yellow);
-	font: 700 42px/40px 'Inter-Bold'; /*40*/
+	font: 700 41px/40px 'Inter-Bold'; /*40*/
 	margin-bottom: 34px;
 }
 
@@ -236,9 +236,9 @@ main {
 /*-------- TITLE --------*/
 
 #title {
+	padding-top:4px;
 	color: var(--DarkSpaceBlue);
 	grid-area: title;
-	border: solid 1px red;
 }
 
 /*-------- READMORE --------*/
@@ -250,7 +250,8 @@ main {
 #readMore-text {
 	width: inherit;
 	height: 104px;
-	font: 400 15px/26px 'Inter-Regular';
+	padding-right: 5px;
+	font: 400 16px/26px 'Inter-Regular';
 	color: var(--Gunmetal);
 }
 
@@ -258,7 +259,7 @@ main {
 	width: 185px;
 	height: 48px;
 	padding: 0px;
-	margin-top: 29px;
+	margin-top: 30px;
 	border: none;
 	background-color: var(--LightVermillion);
 	color: var(--DarkSpaceBlue);
@@ -307,13 +308,14 @@ footer{
 
 .footer-articleNum{
 	font: 700 32px/32px 'Inter-Bold';
+	letter-spacing: 1px;
 	color: var(--LightVermillion);
 }
 
 .footer-articleHeaderBt{
 	padding: 0px;
 	margin: 12px 0px 9px;
-	font: 800 18px/24px 'Inter-ExtraBold';
+	font: 800 18.7px/24px 'Inter-ExtraBold';
 	text-align: left;
 	color: var(--DarkSpaceBlue);
 	border: none;
@@ -329,7 +331,7 @@ footer{
 }
 
 .footer-articleText{
-	font: 400 15px/26px 'Inter-Regular';
+	font: 400 16px/26px 'Inter-Regular';
 	color: var(--Gunmetal);
 }
 
@@ -360,8 +362,8 @@ footer{
 	}
 
 	#logo {
-		width: 45px;
-		background: url('../images/logo.svg') center/45px no-repeat;
+		width: 46px;
+		background: url('../images/logo.svg') center/46px no-repeat;
 	}
 
 	#desktopMenu {
