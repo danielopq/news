@@ -236,7 +236,7 @@ main {
 /*-------- TITLE --------*/
 
 #title {
-	padding-top:4px;
+	padding-top:5px;
 	color: var(--DarkSpaceBlue);
 	grid-area: title;
 }
@@ -314,7 +314,7 @@ footer{
 
 .footer-articleHeaderBt{
 	padding: 0px;
-	margin: 12px 0px 12px;
+	margin: 12px 0px 10px;
 	font: 800 18.7px/24px 'Inter-ExtraBold';
 	text-align: left;
 	color: var(--DarkSpaceBlue);
