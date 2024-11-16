@@ -27,7 +27,7 @@
 
 /*###################### GENERAL ######################*/
 * {
-	font-family: 'Inter';
+	box-sizing: border-box;
 }
 
 body {
@@ -60,7 +60,7 @@ p,h1{
 }
 
 h1 {
-	font: 800 56px/56px 'Inter';
+	font: 800 56px/56px 'Inter-ExtraBold';
 }
 
 /*-------- DESKTOP MENU --------*/
@@ -89,7 +89,7 @@ nav {
 }
 
 .desktopMenuBt {
-	font: 400 15px/40px 'Inter';
+	font: 400 15px/40px 'Inter-Regular';
 	padding: 0px;
 	color: var(--Gunmetal);
 	background-color: transparent;
@@ -149,7 +149,7 @@ nav {
 	height: 24px;
 	padding: 0px;
 	color: hsl(240, 100%, 5%);
-	font: 400 18px/24px 'Inter';
+	font: 400 18px/24px 'Inter-Regular';
 	margin-bottom: 24px;
 	text-align: left;
 	border: none;
@@ -189,7 +189,7 @@ main {
 
 #new-top {
 	color: var(--Yellow);
-	font: 800 40px/40px 'Inter';
+	font: 700 40px/40px 'Inter-Bold';
 	margin-bottom: 34px;
 }
 
@@ -209,7 +209,7 @@ main {
 	margin-bottom: 8px;
 	background-color: transparent;
 	border: none;
-	font: 700 20px/24px 'Inter';
+	font: 800 20px/24px 'Inter-ExtraBold';
 	color: var(--AlmostWhite);
 	cursor: pointer;
 	transition: color 0.3s ease;
@@ -229,7 +229,7 @@ main {
 }
 
 .new-text {
-	font: 300 15px/26px 'Inter';
+	font: 400 15px/26px 'Inter-Regular';
 	color: var(--Silver);
 }
 
@@ -249,7 +249,7 @@ main {
 #readMore-text {
 	width: inherit;
 	height: 104px;
-	font: 400 15px/26px 'Inter';
+	font: 400 15px/26px 'Inter-Regular';
 	color: var(--Gunmetal);
 }
 
@@ -261,7 +261,7 @@ main {
 	border: none;
 	background-color: var(--LightVermillion);
 	color: var(--DarkSpaceBlue);
-	font: 600 14px/48px 'Inter';
+	font: 700 14px/48px 'Inter-Bold';
 	letter-spacing: 4.38px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
@@ -305,14 +305,14 @@ footer{
 }
 
 .footer-articleNum{
-	font: 600 32px/32px 'Inter';
+	font: 700 32px/32px 'Inter-Bold';
 	color: var(--LightVermillion);
 }
 
 .footer-articleHeaderBt{
 	padding: 0px;
 	margin: 12px 0px 9px;
-	font: 600 18px/24px 'Inter';
+	font: 800 18px/24px 'Inter-ExtraBold';
 	text-align: left;
 	color: var(--DarkSpaceBlue);
 	border: none;
@@ -328,7 +328,7 @@ footer{
 }
 
 .footer-articleText{
-	font: 400 15px/26px 'Inter';
+	font: 400 15px/26px 'Inter-Regular';
 	color: var(--Gunmetal);
 }
 
