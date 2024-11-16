@@ -3,6 +3,7 @@
 
 :root {
 	--AlmostWhite: #FFFDFA; /*hsl(36,100%,99%)*/
+	--LightVermillion: #F15D51; /*hsl(4.5,85.1%,63.1%)*/
 	--Yellow: #E9AA52; /*hsl(35,77.4%,61.8%)*/
 	--Silver: #C5C6CE; /*hsl(233.3,8.4%,79%)*/
 	--Gunmetal: #5E607A; /*hsl(235.7,13%,42.4%)*/
@@ -229,26 +230,29 @@ main {
 
 #readMore-text {
 	width: inherit;
-	height: 130px;
-	font: 400 15px/1.6 'Inter';
+	height: 104px;
+	font: 400 15px/26px 'Inter';
 	color: var(--Gunmetal);
 }
 
 #readMore-bt {
 	width: 185px;
-	height: 50px;
-	background-color: hsl(5, 85%, 63%);
-	color: white;
-	text-align: center;
-	font: 600 14px/50px 'Inter';
-	letter-spacing: 5px;
+	height: 48px;
+	padding: 0px;
+	margin-top: 29px;
+	border: none;
+	background-color: var(--LightVermillion);
+	color: var(--DarkSpaceBlue);
+	font: 600 14px/48px 'Inter';
+	letter-spacing: 4.38px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 }
 
 @media(hover:hover) {
 	#readMore-bt:hover {
-		background-color: hsl(240, 100%, 5%);
+		color: var(--AlmostWhite);
+		background-color: var(--DarkSpaceBlue);
 	}
 }
 
