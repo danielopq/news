@@ -73,7 +73,7 @@ nav {
 }
 
 #logo {
-	width: 64px;
+	width: 65px;
 	height: inherit;
 	background: url('../images/logo.svg') center/64px no-repeat;
 }
@@ -89,7 +89,7 @@ nav {
 }
 
 .desktopMenuBt {
-	font: 400 15px/40px 'Inter-Regular';
+	font: 400 16px/40px 'Inter-Regular';
 	padding: 0px;
 	color: var(--Gunmetal);
 	background-color: transparent;
@@ -182,14 +182,14 @@ main {
 /*-------- NEW --------*/
 
 #new {
-	padding: 30px 24px 0px 24px;
+	padding: 30px 25px 0px 24px;
 	background-color: var(--DarkSpaceBlue);
 	grid-area: new;
 }
 
 #new-top {
 	color: var(--Yellow);
-	font: 700 40px/40px 'Inter-Bold';
+	font: 700 42px/40px 'Inter-Bold'; /*40*/
 	margin-bottom: 34px;
 }
 
@@ -209,7 +209,7 @@ main {
 	margin-bottom: 8px;
 	background-color: transparent;
 	border: none;
-	font: 800 20px/24px 'Inter-ExtraBold';
+	font: 800 20.5px/24px 'Inter-ExtraBold';
 	color: var(--AlmostWhite);
 	cursor: pointer;
 	transition: color 0.3s ease;
@@ -229,7 +229,7 @@ main {
 }
 
 .new-text {
-	font: 400 15px/26px 'Inter-Regular';
+	font: 400 16px/26px 'Inter-Regular';
 	color: var(--Silver);
 }
 
@@ -238,6 +238,7 @@ main {
 #title {
 	color: var(--DarkSpaceBlue);
 	grid-area: title;
+	border: solid 1px red;
 }
 
 /*-------- READMORE --------*/
