@@ -145,14 +145,13 @@ nav {
 
 main {
 	width: 1110px;
-	height: 806px;
+	height: 511px;
 	display: grid;
-	grid-template-rows: 300px 183px 125px;
+	grid-template-rows: 300px 183px;
 	grid-template-columns: 350px 350px 350px;
 	grid-template-areas:
 		"mainPic mainPic new"
-		"title readMore new"
-		"reviving laptops gaming";
+		"title readMore new";
 	column-gap: 30px;
 	row-gap: 28px;
 	margin-top: 55px;
@@ -256,74 +255,69 @@ main {
 	}
 }
 
-/*-------- BOTTOM NEWS --------*/
-.bottom-news {
-	display: grid;
-	grid-template-rows: 30px 25px 50px;
-	grid-template-columns: 100px 225px;
-	grid-row-gap: 10px;
-	grid-column-gap: 25px;
-	grid-template-areas:
-		"pic number"
-		"pic title"
-		"pic text";
+/*-------- FOOTER --------*/
+
+footer{
+	width: 1110px;
+	height: 129px;
+	margin-top: 71px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.bottom-news-pic {
-	grid-area: pic;
+.footerNews{
+	width: 350px;
+	height: 127px;
+	display: inline-flex;
+	justify-content: space-between;
 }
 
-.bottom-news-num {
-	font: 600 30px/30px 'Inter';
-	color: hsl(233, 8%, 79%);
+.footerPic{
+	width: 100px;
+	height: 127px;
+}
+
+.footer-articleContent{
+	width: 226px;
+	height: inherit;
+	display:flex;
+	flex-direction: column;
+}
+
+.footer-articleNum{
+	font: 600 32px/32px 'Inter';
+	color: var(--LightVermillion);
+}
+
+.footer-articleHeaderBt{
+	padding: 0px;
+	margin: 12px 0px 9px;
+	font: 600 18px/24px 'Inter';
 	text-align: left;
-	grid-area: number;
-}
-
-.bottom-news-title {
-	font: 600 18px/25px 'Inter';
-	text-align: left;
-	grid-area: title;
-}
-
-.bottom-news-title p {
-	margin: auto;
-	cursor: pointer;
-	color: hsl(240, 100%, 5%);
+	color: var(--DarkSpaceBlue);
+	border: none;
+	background-color: transparent;
 	transition: color 0.3s ease;
+	cursor: pointer;
 }
 
-@media(hover:hover) {
-	.bottom-news-title p:hover {
-		color: hsl(5, 85%, 63%);
+@media(hover:hover){
+	.footer-articleHeaderBt:hover{
+		color: var(--LightVermillion);
 	}
 }
 
-.bottom-news-text {
-	font: 400 15px/1.6 'Inter';
-	color: var(--Gunmetal);
-	text-align: left;
-	grid-area: text;
-}
-
-#reviving {
-	grid-area: reviving;
+.footer-articleText{
+	font: 400 15px/26px 'Inter';
 }
 
 #reviving-pic {
 	background: url("../images/image-retro-pcs.jpg") center/100px no-repeat;
 }
 
-#laptops {
-	grid-area: laptops;
-}
-
 #laptops-pic {
 	background: url("../images/image-top-laptops.jpg") center/100px no-repeat;
-}
-
-#gaming {
-	grid-area: gaming;
 }
 
 #gaming-pic {
