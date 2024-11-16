@@ -10,46 +10,25 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 	<title>W News</title>
 </head>
-
 <body class="flexColumnCenter">
 	<nav class="flexRowCenterSpaceBt">
-		<div id="menu-logo"></div>
-		<div id="menu-links" class="flexRowCenterSpaceBt">
-			<div id="link-desk-home">
-				<p>Home</p>
-			</div>
-			<div id="link-desk-new">
-				<p>New</p>
-			</div>
-			<div id="link-desk-popular">
-				<p>Popular</p>
-			</div>
-			<div id="link-desk-trending">
-				<p>Trending</p>
-			</div>
-			<div id="link-desk-categories">
-				<p>Categories</p>
-			</div>
+		<div id="logo"></div>
+		<div id="desktopMenu" class="flexRowCenterSpaceBt">
+			<button class="desktopMenuBt" aria-label="Home">Home</button>
+			<button class="desktopMenuBt" aria-label="New">New</button>
+			<button class="desktopMenuBt" aria-label="Popular">Popular</button>
+			<button class="desktopMenuBt" aria-label="Trending">Trending</button>
+			<button class="desktopMenuBt" aria-label="Categories">Categories</button>
 		</div>
-		<div id="menu-hamburger"></div>
-		<div id="menu-mobile">
+		<div id="hamburger"></div>
+		<div id="mobileMenu">
 			<div id="menu-mobile-back">
-				<div id="mobile-close"><img id="closeIcon-img" src="images/icon-menu-close.svg" alt="" /></div>
-				<div id="link-mb-home" class="link-mb">
-					<p>Home</p>
-				</div>
-				<div id="link-mb-new" class="link-mb">
-					<p>New</p>
-				</div>
-				<div id="link-mb-popular" class="link-mb">
-					<p>Popular</p>
-				</div>
-				<div id="link-mb-trending" class="link-mb">
-					<p>Trending</p>
-				</div>
-				<div id="link-mb-categories" class="link-mb">
-					<p>Categories</p>
-				</div>
+				<button id="hideMenuBt"></button>
+				<button class="mobileMenuBt" aria-label="Home">Home</button>
+				<button class="mobileMenuBt" aria-label="New">New</button>
+				<button class="mobileMenuBt" aria-label="Popular">Popular</button>
+				<button class="mobileMenuBt" aria-label="Trending">Trending</button>
+				<button class="mobileMenuBt" aria-label="Categories">Categories</button>
 			</div>
 		</div>
 	</nav>

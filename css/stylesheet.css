@@ -1,8 +1,10 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-:root{
+:root {
+	--AlmostWhite: #FFFDFA; /*hsl(36,100%,99%)*/
 	--Gunmetal: #5E607A; /*hsl(235.7,13%,42.4%)*/
+	--DarkSpaceBlue: #00001A; /*hsl(240,100%,5.1%)*/
 }
 
 /*###################### GENERAL ######################*/
@@ -15,11 +17,10 @@ body {
 	padding: 0px;
 	width: 100vw;
 	height: 100vh;
-	padding-top: 89px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	background-color: hsl(36, 100%, 99%);
+	background-color: var(--AlmostWhite);
 }
 
 .flexColumnCenter {
@@ -43,100 +44,92 @@ h1 {
 
 /*-------- MENU --------*/
 
-nav{
+nav {
 	width: 1110px;
 	height: 40px;
 	padding: 0px;
-	margin: 0px;
-	border: solid 1px red;
+	margin: 89px 0px 0px;
 }
 
-#menu-logo{
+#logo {
 	width: 64px;
 	height: inherit;
-	background: url('../images/logo.svg') top/64px no-repeat;
+	background: url('../images/logo.svg') center/64px no-repeat;
 }
 
-#menu-links{
+#desktopMenu {
 	width: 431px;
+	height: inherit;
 }
 
-#menu-links div {
+#desktopMenu div {
 	height: inherit;
 	text-align: center;
-	font: 400 15px/40px 'Inter';
 }
 
-#menu-links p {
-	margin: auto;
+.desktopMenuBt {
+	font: 400 15px/40px 'Inter';
 	color: var(--Gunmetal);
+	background-color: transparent;
+	border: none;
 	transition: color 0.3s ease;
+	cursor: pointer;
 }
 
 @media(hover:hover) {
-	#menu-links p:hover {
-		cursor: pointer;
+	#desktopMenu button:hover {
 		color: hsl(35, 77%, 62%);
 	}
 }
 
-#menu-hamburger {
-	display: none;
-	width: 40px;
-	height: 40px;
-	background: url("../images/icon-menu.svg") center no-repeat;
-	cursor: pointer;
-}
-
-#menu-mobile {
+#mobileMenu {
+	width: 100%;
+	height: 100vh;
 	display: none;
 	position: fixed;
 	z-index: 100;
 	right: 0px;
 	top: 0px;
 	overflow: hidden;
-	width: 100%;
-	height: 100vh;
-	background-color: hsla(0, 0%, 0%, 0.6)
+	background-color: hsla(240, 100%, 5.1%, 0.5)
+}
+
+#hamburger {
+	display: none;
+	width: 40px;
+	height: inherit;
+	background: url("../images/icon-menu.svg") center/40px no-repeat;
 }
 
 #menu-mobile-back {
-	float: right;
-	overflow: hidden;
-	width: 300px;
+	width: 256px;
 	height: inherit;
-	background-color: white;
-}
-
-#menu-mobile-back>div {
-	width: inherit;
-	height: 40px;
-}
-
-#menu-mobile p {
-	color: hsl(240, 100%, 5%);
-	font: 400 18px/40px 'Inter';
-	margin-left: 25px;
-	cursor: pointer;
-	transition: color 0.3s ease;
-}
-
-@media(hover:hover) {
-	#menu-mobile p:hover {
-		color: hsla(240, 100%, 5%, 0.6);
-	}
-}
-
-#mobile-close {
-	margin-top: 30px;
-	margin-bottom: 60px;
-}
-
-#closeIcon-img {
-	display: block;
 	float: right;
-	margin-right: 30px;
-	cursor: pointer;
+	padding: 27px 24px 0px 20px;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--AlmostWhite);
+}
+
+#hideMenuBt {
+	width: 30px;
+	height: 30px;
+	align-self: flex-end;
+	background: transparent url('../images/icon-menu-close.svg') center/30px no-repeat;
+	border: none;
+	margin-bottom: 86px;
+}
+
+.mobileMenuBt {
+	width: auto;
+	height: 24px;
+	padding: 0px;
+	color: hsl(240, 100%, 5%);
+	font: 400 18px/24px 'Inter';
+	margin-bottom: 24px;
+	text-align: left;
+	border: none;
+	background-color: transparent;
 }
 
 /*-------- MAIN --------*/
@@ -152,14 +145,12 @@ main {
 		"reviving laptops gaming";
 	grid-gap: 30px;
 	margin-top: 55px;
-	border: solid 1px red;
 }
 
 /*-------- MAINPIC --------*/
 #mainPic {
 	background: url("../images/image-web-3-desktop.jpg") center/730px no-repeat;
 	grid-area: mainPic;
-	border: solid 1px red;
 }
 
 /*-------- NEWS --------*/
@@ -326,41 +317,28 @@ main {
 }
 
 /*##################################### MOBILE VERSION #####################################*/
-@media screen and (max-width: 480px) {
-	body {
-		height: 100%;
-	}
-
+@media screen and (max-width: 768px) {
 	main {
-		margin-top: 30px;
-		height: 1805px;
-		width: 450px;
-		grid-template-rows: 40px 300px 180px 160px 510px 125px 125px 125px;
-		grid-template-columns: 450px;
-		grid-template-areas:
-			"menu"
-			"mainPic"
-			"title"
-			"readMore"
-			"news"
-			"reviving"
-			"laptops"
-			"gaming";
-	}
-
-	#menu-links {
 		display: none;
 	}
 
-	#menu-hamburger {
+	nav {
+		width: 343px;
+		height: 28px;
+		margin-top: 28px;
+
+	}
+
+	#logo {
+		width: 45px;
+		background: url('../images/logo.svg') center/45px no-repeat;
+	}
+
+	#desktopMenu {
+		display: none;
+	}
+
+	#hamburger {
 		display: block;
-	}
-
-	#mainPic {
-		background: url("../images/image-web-3-mobile.jpg") no-repeat;
-	}
-
-	#readMore-text {
-		height: 110px;
 	}
 }
