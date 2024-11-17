@@ -89,7 +89,7 @@ nav {
 }
 
 .desktopMenuBt {
-	font: 400 16px/40px 'Inter-Regular';
+	font: 400 15.5px/40px 'Inter-Regular';
 	padding: 0px;
 	color: var(--Gunmetal);
 	background-color: transparent;
@@ -314,8 +314,8 @@ footer{
 
 .footer-articleHeaderBt{
 	padding: 0px;
-	margin: 12px 0px 10px;
-	font: 800 18.7px/24px 'Inter-ExtraBold';
+	margin: 12px 0px 18px;
+	font: 800 18.3px/24px 'Inter-ExtraBold';
 	text-align: left;
 	color: var(--DarkSpaceBlue);
 	border: none;
