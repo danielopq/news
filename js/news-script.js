@@ -4,6 +4,7 @@
  */
 const openMobileMenu = () => {
 	document.getElementById("mobileMenu").style.display = "block";
+	document.body.style.overflow = "hidden";
 }
 
 /**
@@ -11,6 +12,7 @@ const openMobileMenu = () => {
  */
 const closeMobileMenu = () => {
 	document.getElementById("mobileMenu").style.display = "none";
+	document.body.style.overflow = "auto";
 }
 
 (() => {
