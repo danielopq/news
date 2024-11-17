@@ -5,11 +5,13 @@
 	src: url('../fonts/Inter-Regular.woff');
 	font-weight: 400;
 }
+
 @font-face {
 	font-family: 'Inter-Bold';
 	src: url('../fonts/Inter-Bold.woff');
 	font-weight: 700;
 }
+
 @font-face {
 	font-family: 'Inter-ExtraBold';
 	src: url('../fonts/Inter-ExtraBold.woff');
@@ -17,12 +19,12 @@
 }
 
 :root {
-	--AlmostWhite: #FFFDFA; /*hsl(36,100%,99%)*/
-	--LightVermillion: #F15D51; /*hsl(4.5,85.1%,63.1%)*/
-	--Yellow: #E9AA52; /*hsl(35,77.4%,61.8%)*/
-	--Silver: #C5C6CE; /*hsl(233.3,8.4%,79%)*/
-	--Gunmetal: #5E607A; /*hsl(235.7,13%,42.4%)*/
-	--DarkSpaceBlue: #00001A; /*hsl(240,100%,5.1%)*/
+	--AlmostWhite: #FFFDFA;/*hsl(36,100%,99%)*/
+	--LightVermillion: #F15D51;/*hsl(4.5,85.1%,63.1%)*/
+	--Yellow: #E9AA52;/*hsl(35,77.4%,61.8%)*/
+	--Silver: #C5C6CE;/*hsl(233.3,8.4%,79%)*/
+	--Gunmetal: #5E607A;/*hsl(235.7,13%,42.4%)*/
+	--DarkSpaceBlue: #00001A;/*hsl(240,100%,5.1%)*/
 }
 
 /*###################### GENERAL ######################*/
@@ -54,13 +56,10 @@ body {
 	justify-content: space-between;
 }
 
-p,h1{
+p,
+h1 {
 	margin: 0px;
 	padding: 0px;
-}
-
-h1 {
-	font: 800 58px/56px 'Inter-ExtraBold';
 }
 
 /*-------- DESKTOP MENU --------*/
@@ -115,7 +114,7 @@ nav {
 	right: 0px;
 	top: 0px;
 	overflow: hidden;
-	background-color: var(--DarkSpaceBlue)
+	background-color: hsla(240,100%,5.1%,0.5);
 }
 
 #hamburger {
@@ -189,7 +188,7 @@ main {
 
 #new-top {
 	color: var(--Yellow);
-	font: 700 41px/40px 'Inter-Bold'; /*40*/
+	font: 700 41px/40px 'Inter-Bold';
 	margin-bottom: 34px;
 }
 
@@ -221,11 +220,11 @@ main {
 	}
 }
 
-.new-separator{
+.new-separator {
 	width: 302px;
 	height: 1px;
 	margin: 29px 0px 31px;
-	background-color: var(--Gunmetal) ;
+	background-color: var(--Gunmetal);
 }
 
 .new-text {
@@ -236,9 +235,13 @@ main {
 /*-------- TITLE --------*/
 
 #title {
-	padding-top:5px;
+	padding-top: 5px;
 	color: var(--DarkSpaceBlue);
 	grid-area: title;
+}
+
+h1 {
+	font: 800 58px/56px 'Inter-ExtraBold';
 }
 
 /*-------- READMORE --------*/
@@ -278,7 +281,7 @@ main {
 
 /*-------- FOOTER --------*/
 
-footer{
+footer {
 	width: 1110px;
 	height: 129px;
 	margin-top: 71px;
@@ -287,32 +290,32 @@ footer{
 	justify-content: space-between;
 }
 
-.footerNews{
+.footerNews {
 	width: 350px;
 	height: 127px;
 	display: inline-flex;
 	justify-content: space-between;
 }
 
-.footerPic{
+.footerPic {
 	width: 100px;
 	height: 127px;
 }
 
-.footer-articleContent{
+.footer-articleContent {
 	width: 226px;
 	height: inherit;
-	display:flex;
+	display: flex;
 	flex-direction: column;
 }
 
-.footer-articleNum{
+.footer-articleNum {
 	font: 700 32px/32px 'Inter-Bold';
 	letter-spacing: 1px;
 	color: var(--LightVermillion);
 }
 
-.footer-articleHeaderBt{
+.footer-articleHeaderBt {
 	padding: 0px;
 	margin: 10px 0px 9px;
 	font: 800 18.3px/24px 'Inter-ExtraBold';
@@ -324,13 +327,13 @@ footer{
 	cursor: pointer;
 }
 
-@media(hover:hover){
-	.footer-articleHeaderBt:hover{
+@media(hover:hover) {
+	.footer-articleHeaderBt:hover {
 		color: var(--LightVermillion);
 	}
 }
 
-.footer-articleText{
+.footer-articleText {
 	font: 400 16px/26px 'Inter-Regular';
 	color: var(--Gunmetal);
 }
@@ -350,10 +353,10 @@ footer{
 /*##################################### MOBILE VERSION #####################################*/
 
 @media screen and (max-width: 768px) {
-	main {
-		display: none;
+	body {
+		height: auto;
 	}
-
+	/*-------- NAVIGATION BAR --------*/
 	nav {
 		width: 343px;
 		height: 28px;
@@ -372,5 +375,75 @@ footer{
 
 	#hamburger {
 		display: block;
+	}
+
+	/*-------- MAIN --------*/
+
+	main {
+		width: 343px;
+		height: auto;
+		margin-top: 32px;
+		grid-template-rows: 300px 24px 120px 16px 176px 64px 489px;
+		grid-template-columns: 343px;
+		grid-template-areas:
+			"mainPic"
+			"."
+			"title"
+			"."
+			"readMore"
+			"."
+			"new";
+		column-gap: 0px;
+		row-gap: 0px;
+	}
+
+	/*-------- MAINPIC --------*/
+
+	#mainPic {
+		background: url("../images/image-web-3-mobile.jpg") center/343px no-repeat;
+	}
+
+	/*-------- NEW --------*/
+
+	#new {
+		height: 489px;
+		padding: 24px 21px 0px 20px;
+	}
+
+	#new-top {
+		font: 700 32px/32px 'Inter-Bold';
+	}
+
+	/*-------- TITLE --------*/
+
+	#title {
+		height: 120px;
+		padding: 0px 10px 0px;
+	}
+
+	h1 {
+		font: 800 40px/40px 'Inter-ExtraBold';
+	}
+
+	/*-------- READMORE --------*/
+
+	#readMore-bt {
+		margin-top: 22px;
+	}
+
+	/*-------- FOOTER --------*/
+
+	footer {
+		width: 343px;
+		height: 451px;
+		margin: 64px 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.footerNews {
+		width: 343px;
 	}
 }
