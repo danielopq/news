@@ -314,7 +314,7 @@ footer{
 
 .footer-articleHeaderBt{
 	padding: 0px;
-	margin: 12px 0px 18px;
+	margin: 12px 0px 8px;
 	font: 800 18.3px/24px 'Inter-ExtraBold';
 	text-align: left;
 	color: var(--DarkSpaceBlue);
